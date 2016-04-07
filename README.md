@@ -1,7 +1,7 @@
 # date-stats
 A bash script for last modification stats on a directory of directories.
 
-## usage
+### Usage
 The script ignores empty directories, as well as directories that only contain empty directories.
 
 Specify the directory to analyze as an argument to the script, including the trailing '/'
@@ -9,7 +9,7 @@ Specify the directory to analyze as an argument to the script, including the tra
 ./date-stats.sh ~/
 ```
 
-## output format
+### Output
 The output is printed to the console as comma delimited data and may be output redirected to a `.csv` file for easy analysis.
 Example:
 ```bash
@@ -21,4 +21,9 @@ Directory, 1 Week, 1 Month, 6 Months, 1 Year
 
 Sum 1 Week, Sum 1 Month, Sum 6 Months, Sum 1 Year
 1 , 1 , 9 , 26
+```
+
+Or, to save to a file:
+```bash
+./date-stats.sh ~/ > stats.csv
 ```
